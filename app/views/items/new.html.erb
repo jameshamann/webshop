@@ -1,0 +1,8 @@
+<h1>Adding Items</h1>
+
+<%= form_for(@item, html: {multipart: true}) do |f| %>
+    Name: <%= f.text_field :name %>
+    Description: <%= f.text_field :description %>
+    Price: <%= f.number_field :price %>
+  <p><%= f.submit %></p>
+  <% end %>

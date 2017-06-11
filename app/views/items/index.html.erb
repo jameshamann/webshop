@@ -1,10 +1,16 @@
 <div class="container">
 <h2>Items</h2>
 
+<% if @items.any? %>
+  <% @items.each do |i| %>
+    <p> <%= i.name %></p>
+    <p> <%= i.description %></p>
+  <% end %>
+  <% else %>
+    <h2>No items yet!</h2>
+  <% end %>
 
-  No items available
-
-  <%= link_to "Add Item" %>
+  <%= link_to "Add a new Item", new_item_path %>
 
 
 </div>
