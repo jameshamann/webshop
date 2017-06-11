@@ -5,6 +5,7 @@
   <% @items.each do |i| %>
     <p> <%= i.name %></p>
     <p> <%= i.description %></p>
+    <%= image_tag i.avatar.url(:medium) %>
   <% end %>
   <% else %>
     <h2>No items yet!</h2>

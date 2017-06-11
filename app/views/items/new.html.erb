@@ -4,5 +4,7 @@
     Name: <%= f.text_field :name %>
     Description: <%= f.text_field :description %>
     Price: <%= f.number_field :price %>
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
   <p><%= f.submit %></p>
   <% end %>

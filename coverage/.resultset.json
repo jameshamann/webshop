@@ -347,7 +347,7 @@
       ],
       "/Users/jameshamann/Documents/Dev_Work/webshop/app/models/item.rb": [
         1,
-        null,
+        1,
         null
       ],
       "/Users/jameshamann/Documents/Dev_Work/webshop/app/models/application_record.rb": [
@@ -356,6 +356,6 @@
         null
       ]
     },
-    "timestamp": 1497205560
+    "timestamp": 1497207383
   }
 }

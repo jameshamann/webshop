@@ -26,6 +26,9 @@ gem 'dotenv-rails'
 
 gem 'pg'
 
+gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
