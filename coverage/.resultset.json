@@ -1,6 +1,16 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/web_helper.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null
+      ],
       "/Users/jameshamann/Documents/Dev_Work/webshop/spec/features/adding_an_item_spec.rb": [
         1,
         null,
@@ -14,11 +24,6 @@
         1,
         null,
         null,
-        1,
-        1,
-        1,
-        1,
-        1,
         1,
         1,
         1,
@@ -351,6 +356,6 @@
         null
       ]
     },
-    "timestamp": 1497205308
+    "timestamp": 1497205560
   }
 }
