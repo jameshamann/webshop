@@ -45,14 +45,14 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'listen'
+gem 'listen', '~> 3.0.5'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
   gem 'coveralls', require: false
   gem 'simplecov'
-  gem 'listen'
+  gem 'listen', '~> 3.0.5'
 end
 
 group :test do
