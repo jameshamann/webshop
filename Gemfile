@@ -24,7 +24,6 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'dotenv-rails'
 
-gem 'pg'
 
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
@@ -41,6 +40,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+gem 'pg'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
@@ -53,6 +53,8 @@ group :development, :test do
   gem 'coveralls', require: false
   gem 'simplecov'
   gem 'listen', '~> 3.0.5'
+  gem 'pg'
+
 end
 
 group :test do
