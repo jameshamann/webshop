@@ -3,13 +3,13 @@
 
 
   <% if @items.any? %>
-    <% @items.each do |i| %>
+    <% @items.each do |item| %>
     <div class="row">
       <div class="col s3 offset-s1">
-      <p><b> <%= i.name %> </b></p>
-      <p> <%= i.description %></p>
-      <p> £<%= i.price %></p>
-      <p> <%= image_tag i.avatar.url(:medium), class: "responsive-img" %> </p>
+      <p><b> <%= link_to "#{item.name}", item_path(item) %> </b></p>
+      <p> <%= item.description %></p>
+      <p> £<%= item.price %></p>
+      <p> <%= image_tag item.avatar.url(:medium), class: "responsive-img" %> </p>
       </div>
     <% end %>
 

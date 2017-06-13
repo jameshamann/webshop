@@ -306,6 +306,22 @@
         1,
         null
       ],
+      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/features/edit_and_delete_item_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/jameshamann/Documents/Dev_Work/webshop/spec/item_spec.rb": [
         1
       ],
@@ -313,7 +329,7 @@
         1,
         null,
         1,
-        3,
+        4,
         null,
         null,
         1,
@@ -329,6 +345,11 @@
         0,
         0,
         null,
+        null,
+        null,
+        1,
+        1,
+        1,
         null,
         null,
         1,
@@ -358,6 +379,6 @@
         null
       ]
     },
-    "timestamp": 1497356642
+    "timestamp": 1497371323
   }
 }

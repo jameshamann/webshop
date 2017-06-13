@@ -19,6 +19,11 @@ class ItemsController < ApplicationController
     end
   end
 
+  def show
+    @item = Item.find(params[:id])
+    @image_url = @item.avatar.url(:medium)
+  end
+
   private
 
   def item_params
