@@ -13,9 +13,17 @@
 
 # Ignore all logfiles and tempfiles.
 /log/*
+/coverage/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
+.env
+
 # Ignore Byebug command history file.
 .byebug_history
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml

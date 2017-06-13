@@ -1,0 +1,22 @@
+<h1>Items</h1>
+
+
+
+  <% if @items.any? %>
+    <% @items.each do |i| %>
+    <div class="row">
+      <div class="col s3 offset-s1">
+      <p><b> <%= i.name %> </b></p>
+      <p> <%= i.description %></p>
+      <p> £<%= i.price %></p>
+      <p> <%= image_tag i.avatar.url(:medium), class: "responsive-img" %> </p>
+      </div>
+    <% end %>
+
+    <% else %>
+      <h5>No items yet!</h5>
+    <% end %>
+
+</div>
+
+<h1><%= link_to "Add a new Item", new_item_path, class: "waves-effect waves-light btn" %></h1>

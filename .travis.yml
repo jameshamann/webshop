@@ -1,3 +1,5 @@
 language: ruby
 rvm:
-  - 2.3
+  - 2.3.1
+before_script:
+- psql -c 'create database webshop_test;' -U postgres
