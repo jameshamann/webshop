@@ -1,0 +1,11 @@
+<div class="row">
+  <h3><%= @item.name %></h3>
+
+
+  <p><%= @item.description %></p>
+  <p><%= image_tag(@image_url) %></p>
+
+  <h3><%= link_to "See all Items", items_path, class: "waves-effect waves-light btn" %></h3>
+
+
+</div>
