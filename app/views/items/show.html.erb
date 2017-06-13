@@ -4,6 +4,7 @@
 
   <p><%= @item.description %></p>
   <p><%= image_tag(@image_url) %></p>
+  <p><%= link_to "Edit Item", edit_item_path(@item), class: "waves-effect waves-light btn" %></p>
 
   <h3><%= link_to "See all Items", items_path, class: "waves-effect waves-light btn" %></h3>
 
