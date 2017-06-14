@@ -23,4 +23,13 @@ feature 'editing, viewing and deleting items' do
     expect(current_path).to eq "/items/#{item.id}"
   end
 
+  it 'a user can delete a photo they created' do
+    visit '/items'
+    click_link "#{item.name}"
+    click_link("Edit Item")
+    click_link("Delete #{item.name}")
+    expect(current_path).to eq '/items'
+    expect(page).to_not have_content('Sampling Kit')
+  end
+
 end
