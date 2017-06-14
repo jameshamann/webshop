@@ -1,0 +1,11 @@
+<h1>Editing <%= "#{@item.name}" %></h1>
+<div class="container">
+<%= form_for(@item, html: {multipart: true}) do |f| %>
+    Name: <%= f.text_field :name %>
+    Description: <%= f.text_field :description %>
+    Price: <%= f.number_field :price %>
+    <%= f.label :avatar %>
+    <%= f.file_field :avatar %>
+  <p><%= f.submit(class: "waves-effect waves-light btn") %>
+  <% end %>
+</div>
