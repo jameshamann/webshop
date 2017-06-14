@@ -24,6 +24,7 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'dotenv-rails'
 
+gem "devise"
 
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'

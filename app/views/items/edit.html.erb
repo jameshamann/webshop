@@ -8,5 +8,6 @@
     <%= f.file_field :avatar %>
   <p><%= f.submit(class: "waves-effect waves-light btn") %>
   <p><%= link_to "Delete #{@item.name}", item_path(@item), method: :delete, class:"waves-effect waves-light btn" %></p>
+
   <% end %>
 </div>
