@@ -1,6 +1,6 @@
 branch-defaults:
   6-user-creation-and-login:
-    environment: null
+    environment: webshop-env
 global:
   application_name: webshop
   branch: null
