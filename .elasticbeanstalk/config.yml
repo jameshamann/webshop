@@ -14,3 +14,6 @@ global:
   repository: null
   sc: git
   workspace_type: Application
+  packages:
+    yum:
+      postgresql93-devel: []
