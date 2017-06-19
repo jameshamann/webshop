@@ -14,11 +14,7 @@ threads threads_count, threads_count
 #
 port ENV.fetch("PORT") { 3000 }
 
-directory '/var/app/current'
-workers %x(grep -c processor /proc/cpuinfo)
-bind 'unix:///var/run/puma/my_app.sock'
-stdout_redirect '/var/log/puma/puma.log', '/var/log/puma/puma.log', true
-daemonize false
+
 
 
 # bind "unix:///var/run/puma/my_app.sock"
