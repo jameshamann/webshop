@@ -2,7 +2,7 @@ branch-defaults:
   6-user-creation-and-login:
     environment: webshop-env
 global:
- application_name: webshop
+  application_name: webshop
   branch: null
   default_ec2_keyname: null
   default_platform: Ruby 2.3 (Puma)
