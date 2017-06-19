@@ -50,7 +50,7 @@ gem 'pg'
 gem 'listen', '~> 3.0.5'
 
 group :production do
-  gem 'puma'
+  gem 'puma' '~> 3.0'
 end
 
 group :development, :test do
