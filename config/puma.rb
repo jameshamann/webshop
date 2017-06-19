@@ -15,10 +15,9 @@ threads threads_count, threads_count
 port        ENV.fetch("PORT") { 3000 }
 
 
-pidfile "#{root}/puma/puma.pid"
-bind "unix:/tmp/puma.socket"
-bind "unix:///var/run/puma/my_app.sock"
-pidfile "/var/run/puma/my_app.sock"
+# pidfile "#{root}/puma/puma.pid"
+# bind "unix:/tmp/puma.socket"
+# bind "unix:///var/run/puma/my_app.sock"
 
 # Specifies the `environment` that Puma will run in.
 #
