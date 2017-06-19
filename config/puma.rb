@@ -3,8 +3,8 @@
 # Any libraries that use thread pools should be configured to match
 # the maximum value specified for Puma. Default is set to 5 threads for minimum
 # and maximum, this matches the default thread size of Active Record.
-app = "webshop"
-root = "/Users/James/Documents/Dev_Projects/#{app}"
+# app = "webshop"
+# root = "/Users/James/Documents/Dev_Projects/#{app}"
 
 
 threads_count = ENV.fetch("RAILS_MAX_THREADS") { 5 }.to_i
@@ -12,12 +12,11 @@ threads threads_count, threads_count
 
 # Specifies the `port` that Puma will listen on to receive requests, default is 3000.
 #
-port        ENV.fetch("PORT") { 3000 }
+port ENV.fetch("PORT") { 3000 }
 
 
-# pidfile "#{root}/puma/puma.pid"
-# bind "unix:/tmp/puma.socket"
-# bind "unix:///var/run/puma/my_app.sock"
+bind "unix:///var/run/puma/my_app.sock"
+pidfile "/var/run/puma/my_app.sock"
 
 # Specifies the `environment` that Puma will run in.
 #
