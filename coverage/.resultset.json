@@ -571,8 +571,22 @@
       ],
       "/Users/James/Documents/Dev_Projects/webshop/config/routes.rb": [
         1,
+        1,
         null,
         null,
+        1,
+        1,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/user.rb": [
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/application_record.rb": [
         1,
         1,
         null
@@ -689,13 +703,8 @@
         1,
         null,
         null
-      ],
-      "/Users/James/Documents/Dev_Projects/webshop/app/models/application_record.rb": [
-        1,
-        1,
-        null
       ]
     },
-    "timestamp": 1497600970
+    "timestamp": 1497951671
   }
 }
