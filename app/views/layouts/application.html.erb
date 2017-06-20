@@ -20,8 +20,16 @@
     <%= link_to "Sign up", new_user_registration_path, :class => 'navbar-link'  %> |
     <%= link_to "Login", new_user_session_path, :class => 'navbar-link'  %>
   <% end %>
-  </p>
-    <% if notice %>
+  <% unless flash.empty? %>
+     <script type="text/javascript">
+          <% flash.each do |f| %>
+	      <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+	     	 toastr['<%= type %>']('<%= f[1] %>');
+	   <% end %>
+     </script>
+<% end %>
+  <!-- </p> -->
+    <!-- <% if notice %>
       <script type="text/javascript">
         Materialize.toast('<%= notice %>', 4000, 'rounded')
       </script>
@@ -30,7 +38,7 @@
       <script type="text/javascript">
         Materialize.toast('<%= alert %>', 4000, 'rounded')
       </script>
-    <% end %>
+    <% end %> -->
 
   <%= yield %>
   </body>
