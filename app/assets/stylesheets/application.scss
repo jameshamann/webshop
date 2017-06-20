@@ -4,3 +4,10 @@
 h1,h2,h3,h4,h5,p {
     text-align: center;
 }
+
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 10%;
+  left: 42% !important;
+}

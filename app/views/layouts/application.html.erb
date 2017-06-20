@@ -6,9 +6,22 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
   </head>
 
   <body>
-    <%= yield %>
+    <% if notice %>
+      <script type="text/javascript">
+        Materialize.toast('<%= notice %>', 4000, 'rounded')
+      </script>
+    <% end %>
+    <% if alert %>
+      <script type="text/javascript">
+      Materialize.toast('<%= alert %>', 4000, 'rounded')
+      </script>
+    <% end %>
+
+  <%= yield %>
   </body>
 </html>
