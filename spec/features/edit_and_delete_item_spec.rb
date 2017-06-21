@@ -3,6 +3,11 @@ require 'rails_helper'
 feature 'editing, viewing and deleting items' do
 
   let!(:item) {Item.create(name: 'Sampling Kit', description: 'Kit used for Sampling', price: "10") }
+  let!(:user) {User.create(email: "test@example.com", password: "1234567")}
+
+  before do
+    sign_in(email: user.email, password: user.password)
+  end
 
   it 'a user can visit a specific item' do
     visit '/items'
