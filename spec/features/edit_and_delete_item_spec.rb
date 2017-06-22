@@ -3,10 +3,10 @@ require 'rails_helper'
 feature 'editing, viewing and deleting items' do
 
   let!(:item) {Item.create(name: 'Sampling Kit', description: 'Kit used for Sampling', price: "10") }
-  let!(:user) {User.create(email: "test@example.com", password: "1234567")}
+  let!(:user) {User.create(email: "test@example.com", password: "1234567", password_confirmation: "1234567", superadmin_role: true)}
 
   before do
-    sign_in(email: user.email, password: user.password)
+    sign_in_admin(email: user.email, password: user.password, superadmin_role: true)
   end
 
   it 'a user can visit a specific item' do

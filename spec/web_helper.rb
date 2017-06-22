@@ -1,4 +1,4 @@
-def sign_in(email: "test@example.com", password: "12345678")
+def sign_in_admin(email: "test@example.com", password: "12345678", superadmin_role: true)
   visit('/')
   click_link('Login')
   fill_in('user_email', with: email)
@@ -6,7 +6,7 @@ def sign_in(email: "test@example.com", password: "12345678")
   click_button('Log in')
 end
 
-def sign_up(email: "test@example.com", password: "12345678")
+def sign_up_admin(email: "test@example.com", password: "12345678", password_confirmation: "12345678", superadmin_role: true)
   visit('/')
   click_link('Sign up')
   fill_in('user_email', with: email)
