@@ -1,3 +1,12 @@
+<% if current_user %>
+
+<h1> Oh snap you can't view this page </h1>
+
+<% end %>
+
+
+<% if current_user.superadmin_role? %>
+
 <h1>Editing <%= "#{@item.name}" %></h1>
 <div class="container">
 <%= form_for(@item, html: {multipart: true}) do |f| %>
@@ -8,5 +17,8 @@
     <%= f.file_field :avatar %>
   <p><%= f.submit(class: "waves-effect waves-light btn") %>
   <p><%= link_to "Delete #{@item.name}", item_path(@item), method: :delete, class:"waves-effect waves-light btn" %></p>
+
   <% end %>
+<% end %>
+
 </div>

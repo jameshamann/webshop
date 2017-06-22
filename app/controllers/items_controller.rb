@@ -9,14 +9,14 @@ class ItemsController < ApplicationController
   end
 
   def create
-      @item = Item.create(item_params)
-      if @item.save
-        redirect_to items_path
-        flash[:notice] = "Item successfully added!"
-      else
-      render "new"
-      flash[:alert] = "Sorry, you must add a valid item"
-    end
+    @item = Item.create(item_params)
+        if @item.save
+          redirect_to items_path
+          flash[:notice] = "Item successfully added!"
+        else
+        render "new"
+        flash[:alert] = "Sorry, you must add a valid item"
+      end
   end
 
   def show

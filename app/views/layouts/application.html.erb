@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
+<header>
   <head>
     <title>Webshop</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
+  </head>
+</header>
+<main>
   <body>
-    <%= yield %>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center">Webshop</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down">
+        <% if user_signed_in? %>
+          <li><%= link_to "Hello #{current_user.first_name}!", edit_user_registration_path %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+        <li><%= link_to "Login", new_user_session_path %></li>
+      <% end %>
+      </ul>
+    </div>
+ </nav>
+
+  <% unless flash.empty? %>
+     <script type="text/javascript">
+          <% flash.each do |f| %>
+	      <% type = f[0].to_s.gsub('alert', 'error').gsub('notice', 'info') %>
+	     	 toastr['<%= type %>']('<%= f[1] %>');
+	   <% end %>
+     </script>
+<% end %>
+
+  <%= yield %>
   </body>
+</main>
+  <footer class="page-footer">
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 <a class="grey-text text-lighten-3" href='wwww.samplelogistics.com'>Sample Logistics</a></li>
+      </div>
+    </div>
+  </footer>
 </html>

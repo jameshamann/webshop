@@ -1,6 +1,39 @@
 @import "materialize";
 @import "https://fonts.googleapis.com/icon?family=Material+Icons";
+@import "toastr";
 
 h1,h2,h3,h4,h5,p {
     text-align: center;
+}
+
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 10%;
+  left: 42% !important;
+}
+
+.nav-wrapper {
+  background-color: #9e1111;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.page-footer {
+  background-color: #9e1111;
+}
+
+.footer-copyright {
+
+  background-color: #9e1111;
+
+
 }

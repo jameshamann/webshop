@@ -24,12 +24,18 @@ gem 'coffee-rails', '~> 4.2'
 # gem 'therubyracer', platforms: :ruby
 gem 'dotenv-rails'
 
+gem "devise"
 
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
 
 gem 'materialize-sass'
 
+gem 'toastr-rails'
+
+gem 'remotipart', github: 'mshibuya/remotipart'
+gem 'rails_admin', '>= 1.0.0.rc'
+gem 'cancancan'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
@@ -45,7 +51,13 @@ gem 'pg'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
 gem 'listen', '~> 3.0.5'
+
+group :production do
+  gem 'puma', '~> 3.0'
+  gem 'pg'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
