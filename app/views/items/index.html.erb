@@ -1,5 +1,3 @@
-<h1>Items</h1>
-
 
 
   <% if @items.any? %>
@@ -7,7 +5,6 @@
     <div class="row">
       <div class="col s3 offset-s1">
       <p><b> <%= link_to "#{item.name}", item_path(item) %> </b></p>
-      <p> <%= item.description %></p>
       <p> £<%= item.price %></p>
       <p> <%= image_tag item.avatar.url(:medium), class: "responsive-img" %> </p>
       </div>
