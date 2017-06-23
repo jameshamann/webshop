@@ -3,6 +3,11 @@ source 'https://rubygems.org'
 
 ruby "2.3.1"
 
+git_source(:github) do |repo_name|
+ repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+ "https://github.com/#{repo_name}.git"
+ end
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.3'
@@ -29,7 +34,7 @@ gem 'materialize-sass'
 
 gem 'toastr-rails'
 
-gem 'remotipart'
+gem 'remotipart', github:'mshibuya/remotipart'
 gem 'rails_admin', '>= 1.0.0.rc'
 gem 'cancancan'
 # Use jquery as the JavaScript library
