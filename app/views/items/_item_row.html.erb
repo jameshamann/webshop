@@ -1,0 +1,17 @@
+
+
+
+<p><b> <%= link_to "#{item.name}", item_path(item) %> </b></p>
+<p> £<%= item.price %></p>
+<p> <%= image_tag item.avatar.url(:medium), class: "responsive-img" %> </p>
+
+<%= form_for order_item, remote: true do |f| %>
+<h4 class="text-right"><span style="color: green"><%= number_to_currency item.price %></span></h4>
+<div class="input-group">
+  <%= f.number_field :quantity, value: 1, class: "form-control", min: 1 %>
+  <div class="input-group-btn">
+    <%= f.hidden_field :item_id, value: item.id %>
+    <%= f.submit "Add to Cart", class: "btn btn-primary" %>
+  </div>
+</div>
+<% end %>

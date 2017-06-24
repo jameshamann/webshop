@@ -26,6 +26,10 @@
     </div>
  </nav>
 
+ <div class="container">
+   <h3 class="cart-text"><%= render 'layouts/cart_text' %></h3>
+ </div>
+ <hr>
   <% unless flash.empty? %>
      <script type="text/javascript">
           <% flash.each do |f| %>

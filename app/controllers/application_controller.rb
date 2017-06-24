@@ -8,6 +8,16 @@ class ApplicationController < ActionController::Base
   #     end
   #   end
 
+  helper_method :current_order
+
+  def current_order
+   if !session[:order_id].nil?
+     Order.find(session[:order_id])
+   else
+     Order.new
+   end
+ end
+
   protect_from_forgery with: :exception
   before_action :authenticate_user!
   skip_before_action :authenticate_user!, :only => [:index]
@@ -20,6 +30,8 @@ class ApplicationController < ActionController::Base
      devise_parameter_sanitizer.permit(:sign_up, keys: [:first_name, :last_name])
      devise_parameter_sanitizer.permit(:account_update, keys: [:first_name, :last_name])
    end
+
+
 
   # def after_sign_in_path_for(resource)
   #     app_dashboard_index_path
