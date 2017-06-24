@@ -27,6 +27,8 @@ gem 'dotenv-rails'
 
 gem "devise"
 
+gem "stripe"
+
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
 
