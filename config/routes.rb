@@ -14,6 +14,8 @@ Rails.application.routes.draw do
 
   resources :charges
 
+  get 'thanks', to: 'charges#thanks', as: 'thanks'
+
   resource :cart, only: [:show]
   resources :order_items, only: [:create, :update, :destroy]
 
