@@ -2,7 +2,6 @@
 
 
 <p><b> <%= link_to "#{item.name}", item_path(item) %> </b></p>
-<p> £<%= item.price %></p>
 <p> <%= image_tag item.avatar.url(:medium), class: "responsive-img" %> </p>
 
 <%= form_for order_item, remote: true do |f| %>

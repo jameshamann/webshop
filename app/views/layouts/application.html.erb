@@ -5,7 +5,7 @@
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
@@ -15,7 +15,7 @@
   <body>
   <nav>
     <div class="nav-wrapper">
-      <a href="#" class="brand-logo center">Webshop</a>
+      <a href="/" class="brand-logo center">Webshop</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <% if user_signed_in? %>
           <li><%= link_to "Hello #{current_user.first_name}!", edit_user_registration_path %></li>
@@ -27,7 +27,7 @@
       </ul>
   <ul id="nav-mobile" class="right hide-on-med-and-down">
    <li><i class="material-icons">shopping_basket</i></li>
-  <li><%= render 'layouts/cart_text' %></li>
+  <li class="cart-text"><%= render 'layouts/cart_text' %></li>
  </ul>
  </div>
 </nav>
