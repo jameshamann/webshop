@@ -1,3 +1,4 @@
+<div class="container">
 <% if !@order_item.nil? && @order_item.errors.any? %>
   <div class="alert alert-danger">
     <ul>
@@ -16,3 +17,5 @@
     <%= render 'carts/cart_row', item: order_item.item, order_item: order_item, show_total: true %>
   <% end %>
 <% end %>
+<h1><%= link_to "Proceed to checkout", new_charge_path, class: "waves-effect waves-light btn" %></h1>
+</div>

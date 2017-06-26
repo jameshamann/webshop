@@ -31,7 +31,7 @@ end
 private
 
  def order_item_params
-   params.require(:order_item).permit(:quantity, :item_id)
+   params.require(:order_item).permit(:quantity, :item_id, :total_price)
  end
 
 end

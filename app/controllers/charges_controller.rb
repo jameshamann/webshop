@@ -1,10 +1,10 @@
 class ChargesController < ApplicationController
+  before_action :amount_to_be_charged
+
   def new
   end
 
   def create
-    # Amount in cents
-    @amount = 500
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
@@ -22,4 +22,12 @@ class ChargesController < ApplicationController
     flash[:error] = e.message
     redirect_to new_charge_path
   end
+
+  private
+    def amount_to_be_charged
+      current_order = Order.find(session[:order_id])
+      @amount = current_order.subtotal * 100
+    end
+
+
 end
