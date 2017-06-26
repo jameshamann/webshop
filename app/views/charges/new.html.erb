@@ -1,5 +1,4 @@
-  <div class="payment">
-    <div class="col s3 offset-s1">
+
   <%= form_tag charges_path do %>
   <article>
     <% if flash[:error].present? %>
@@ -9,16 +8,12 @@
     <% end %>
       <h5><span style="bold">Total Amount Payable: <%= pretty_amount(@amount)%></span></h5>
 </article>
-    </div>
-  </div>
-
 
 <div class="payment">
   <b><script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="<%= @description %>"
           data-amount="<%= @amount %>"
-          data-email="<%= current_user.email %>"
           data-locale="auto"></script></b>
-<% end %>
 </div>
+<% end %>
