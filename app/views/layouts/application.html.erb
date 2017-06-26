@@ -7,6 +7,8 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
   </head>
 <main>
@@ -23,13 +25,12 @@
         <li><%= link_to "Login", new_user_session_path %></li>
       <% end %>
       </ul>
-    </div>
- </nav>
-
- <div class="container">
-   <h3 class="cart-text"><%= render 'layouts/cart_text' %></h3>
+  <ul id="nav-mobile" class="right hide-on-med-and-down">
+   <li><i class="material-icons">shopping_basket</i></li>
+  <li><%= render 'layouts/cart_text' %></li>
+ </ul>
  </div>
- <hr>
+</nav>
   <% unless flash.empty? %>
      <script type="text/javascript">
           <% flash.each do |f| %>
