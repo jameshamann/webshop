@@ -1,0 +1,29 @@
+
+  <%= form_tag charges_path do %>
+  <article>
+    <% if flash[:error].present? %>
+      <div id="error_explanation">
+        <p><%= flash[:error] %></p>
+      </div>
+    <% end %>
+      <h5><span style="bold">Total Amount Payable: <%= pretty_amount(@amount)%></span></h5>
+</article>
+
+<div class="payment">
+  <b><script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="<%= @description %>"
+          data-amount="<%= @amount %>"
+          data-locale="auto"></script></b>
+
+    <button class="btn waves-effect waves-light" type="submit" name="action">Payment
+       <i class="material-icons right">payment</i>
+     </button>
+
+    <script>
+        // Hide default stripe button, be careful there if you
+        // have more than 1 button of that class
+        document.getElementsByClassName("stripe-button-el")[0].style.display = 'none';
+    </script>
+  </div>
+<% end %>

@@ -4,10 +4,8 @@
     <% @items.each do |item| %>
     <div class="row">
       <div class="col s3 offset-s1">
-      <p><b> <%= link_to "#{item.name}", item_path(item) %> </b></p>
-      <p> £<%= item.price %></p>
-      <p> <%= image_tag item.avatar.url(:medium), class: "responsive-img" %> </p>
-      </div>
+      <%= render "item_row", item: item, order_item: @order_item %>
+    </div>
     <% end %>
 
     <% else %>

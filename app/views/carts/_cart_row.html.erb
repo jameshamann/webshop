@@ -1,0 +1,23 @@
+<div class="container">
+
+    <div class="col sl-8">
+      <h3><%= item.name %></h3>
+    </div>
+
+      <%= form_for order_item, remote: true do |f| %>
+        <h6 class="text-right">Unit Price: <span style="color: green"><%= number_to_currency order_item.unit_price %></span></h6>
+        <p> <%= image_tag item.avatar.url(:medium), class: "responsive-img" %> </p>
+          <div class="col s3 push-s5">
+            <%= f.number_field :quantity, value: order_item.quantity.to_i, class: "form-control", min: 1 %>
+            <%= f.hidden_field :item_id, value: item.id %>
+            <%= f.hidden_field :total_price, value: order_item.total_price %>
+          </div>
+          <div class="col s7 push-s5">
+              <%= f.submit "Update Quantity", class: "waves-effect waves-light btn" %>
+              <%= link_to "Delete", order_item, { data: { confirm: "Are you sure you wish to delete the product '#{order_item.item.name}' from your cart?" }, method: :delete, remote: true, class: "waves-effect waves-light btn" } %>
+          </div>
+        </div>
+      <% end %>
+      <h4 class="text-right">Total Price: <span style="color: green"><%= number_to_currency order_item.total_price %></span></h4>
+
+    </div>

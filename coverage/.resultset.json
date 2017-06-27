@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/web_helper.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/spec/web_helper.rb": [
         1,
         5,
         5,
@@ -11,11 +11,11 @@
         null,
         null,
         1,
-        2,
-        2,
-        2,
-        2,
-        2,
+        3,
+        3,
+        3,
+        3,
+        3,
         null,
         null,
         null,
@@ -29,54 +29,22 @@
         1,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/features/adding_an_item_spec.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/spec/charges_spec.rb": [
         1,
-        null,
-        1,
-        null,
-        4,
-        4,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        null,
-        1,
-        2,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        null,
         1,
         null,
         1,
         1,
         null,
+        1,
+        1,
         null,
         1,
         1,
-        1,
-        null,
-        null,
-        null,
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/rails_helper.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/spec/rails_helper.rb": [
         null,
         null,
         1,
@@ -136,14 +104,14 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/environment.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/application.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/application.rb": [
         1,
         null,
         1,
@@ -160,12 +128,12 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/boot.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/spring.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/spring.rb": [
         null,
         null,
         null,
@@ -173,7 +141,7 @@
         null,
         5
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/environments/test.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/environments/test.rb": [
         1,
         null,
         null,
@@ -217,7 +185,7 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/application_controller_renderer.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -225,7 +193,7 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/assets.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -238,7 +206,7 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/backtrace_silencers.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -247,14 +215,14 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/cookies_serializer.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/cookies_serializer.rb": [
         null,
         null,
         null,
         null,
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/devise.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/devise.rb": [
         null,
         null,
         1,
@@ -533,13 +501,13 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/filter_parameter_logging.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/inflections.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -557,13 +525,13 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/mime_types.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/new_framework_defaults.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/new_framework_defaults.rb": [
         null,
         null,
         null,
@@ -591,7 +559,7 @@
         null,
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/rails_admin.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/rails_admin.rb": [
         1,
         null,
         null,
@@ -634,12 +602,20 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/session_store.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/session_store.rb": [
         null,
         null,
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/initializers/wrap_parameters.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/stripe.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        1
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -655,11 +631,25 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/config/routes.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/config/routes.rb": [
         1,
         1,
         null,
+        1,
         null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        1,
         null,
         null,
         1,
@@ -671,7 +661,7 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/models/user.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/user.rb": [
         1,
         null,
         null,
@@ -681,24 +671,86 @@
         1,
         null,
         1,
-        14,
+        17,
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/models/application_record.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/helpers/application_helper.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/helpers/items_helper.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/helpers/carts_helper.rb": [
         1,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/features/edit_and_delete_item_spec.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/helpers/charges_helper.rb": [
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/helpers/items_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/helpers/order_items_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/spec/features/adding_an_item_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        4,
+        4,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/spec/features/edit_and_delete_item_spec.rb": [
         1,
         null,
         1,
@@ -759,10 +811,133 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/spec/item_spec.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/spec/features/user_login_feature_spec.rb": [
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/spec/item_spec.rb": [
         1
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/mailers/user_mailer.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/spec/order_item_spec.rb": [
+        1,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        3,
+        null,
+        2,
+        2,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/order_item.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/spec/order_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/order.rb": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        45,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/mailers/user_mailer.rb": [
         1,
         null,
         1,
@@ -774,13 +949,13 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/mailers/application_mailer.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/mailers/application_mailer.rb": [
         1,
         1,
         1,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/controllers/application_controller.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/controllers/application_controller.rb": [
         1,
         null,
         null,
@@ -792,41 +967,26 @@
         null,
         null,
         1,
-        1,
-        1,
         null,
         1,
+        145,
+        0,
+        null,
+        145,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
         null,
         1,
         null,
         1,
-        14,
-        14,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
-      ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/controllers/users/sessions_controller.rb": [
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        16,
+        16,
         null,
         null,
         null,
@@ -836,10 +996,38 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/controllers/items_controller.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/controllers/users/sessions_controller.rb": [
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/controllers/items_controller.rb": [
         1,
         null,
         1,
+        10,
         10,
         null,
         null,
@@ -889,14 +1077,23 @@
         null,
         null
       ],
-      "/Users/jameshamann/Documents/Dev_Work/webshop/app/models/item.rb": [
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/item.rb": [
         1,
         1,
         1,
         null,
+        1,
+        null,
+        26,
+        null,
+        null
+      ],
+      "/Users/James/Documents/Dev_Projects/webshop/app/models/order_status.rb": [
+        1,
+        1,
         null
       ]
     },
-    "timestamp": 1498165900
+    "timestamp": 1498564996
   }
 }
