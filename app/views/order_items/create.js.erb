@@ -1,7 +1,7 @@
 <% if @order.errors.any? || @order_item.errors.any? %>
 alert("not valid.")
-<% puts "ERROR #{@order.errors}" %>
-<% puts "ERROR #{@order_item.errors}" %>
+<%= puts "ERROR #{@order.errors}" %>
+<%= puts "ERROR #{@order_item.errors}" %>
 <% else %>
   $(".cart-text").html("<%= escape_javascript(render 'layouts/cart_text') %>")
 <% end %>
