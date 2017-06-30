@@ -1,5 +1,7 @@
-<% if current_order.order_items.size > 1 %>
-  <%= link_to "#{current_order.order_items.size} Items in Cart ( #{number_to_currency current_order.subtotal} )", cart_path %>
-<% else %>
-  <%= link_to "#{current_order.order_items.size} Item in Cart ( #{number_to_currency current_order.subtotal} )", cart_path %>
-<% end %>
+<div class="cart-text">
+  <% if current_order.order_items.size > 1 %>
+    <%= link_to "#{current_order.order_items.size} Items in Cart ( #{number_to_currency current_order.subtotal} )", cart_path %>
+  <% else %>
+    <%= link_to "#{current_order.order_items.size} Item in Cart ( #{number_to_currency current_order.subtotal} )", cart_path %>
+  <% end %>
+</div>
